@@ -36,10 +36,10 @@ download_aichat:
 	@curl --silent --location https://github.com/sigoden/aichat/releases/download/v0.30.0/aichat-v0.30.0-x86_64-unknown-linux-musl.tar.gz | bsdtar --extract --directory='usr/local/bin/' --file='-'
 
 download_cliproxyapi:
-	@curl --silent --location https://github.com/router-for-me/CLIProxyAPI/releases/download/v7.1.31/CLIProxyAPI_7.1.31_linux_amd64.tar.gz | bsdtar --extract --directory='usr/local/bin/' --file='-' cli-proxy-api
+	@curl --silent --location https://github.com/router-for-me/CLIProxyAPI/releases/download/v8.0.38/CLIProxyAPI_8.0.38_linux_amd64.tar.gz | bsdtar --extract --directory='usr/local/bin/' --file='-' cli-proxy-api
 
 download_cliproxyapi_web:
-	@curl --silent --location https://github.com/router-for-me/Cli-Proxy-API-Management-Center/releases/download/v1.14.0/management.html > usr/local/bin/static/management.html
+	@curl --silent --location https://github.com/router-for-me/Cli-Proxy-API-Management-Center/releases/download/v1.26.7/management.html > usr/local/bin/static/management.html
 
 download_geoip:
 	@curl --silent --location https://ipbl.herrbischoff.com/geoip/cn.netset > usr/local/share/geoip/cn.netset
