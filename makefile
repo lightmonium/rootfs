@@ -6,13 +6,10 @@ install:
 mkdir:
 	@mkdir --parents usr/local/bin/ usr/local/bin/static/ usr/local/share/geoip/ usr/local/share/dnsmasq/
 
-download: download_claws download_cloudflared download_singbox download_ttyd download_tun2socks download_websocat download_wgcf download_zellij download_aichat download_cliproxyapi download_cliproxyapi_web download_geoip download_dnsmasq
+download: download_claws download_singbox download_ttyd download_tun2socks download_websocat download_wgcf download_zellij download_aichat download_cliproxyapi download_cliproxyapi_web download_geoip download_dnsmasq
 
 download_claws:
 	@curl --silent --location https://github.com/thehowl/claws/releases/download/0.4.1/claws_0.4.1_linux_64bit.tar.gz | bsdtar --extract --directory='usr/local/bin/' --file='-'
-
-download_cloudflared:
-	@curl --silent --location https://github.com/cloudflare/cloudflared/releases/download/2026.3.0/cloudflared-linux-amd64 > usr/local/bin/cloudflared-linux-amd64
 
 download_singbox:
 	@curl --silent --location https://github.com/SagerNet/sing-box/releases/download/v1.13.14/sing-box-1.13.14-linux-amd64.tar.gz | bsdtar --extract --directory='usr/local/bin/' --strip-components=1 --file='-' 'sing-box-1.13.14-linux-amd64/sing-box'
